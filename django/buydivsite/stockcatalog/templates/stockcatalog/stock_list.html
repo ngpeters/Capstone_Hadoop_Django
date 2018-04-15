@@ -1,0 +1,19 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+    <h1>Stock List</h1>
+
+    {% if stock_list %}
+    <ul>
+
+      {% for stock in stock_list %}
+      <li>
+        <a href="{{ stock.get_absolute_url }}">{{ stock.stockname }}</a> ( {% for profituse in stock.profituse.all %} {{ profituse }}{% if not forloop.last %}, {% endif %}{% endfor %} )
+      </li>
+      {% endfor %}
+
+    </ul>
+    {% else %}
+      <p>There are no stocks in the stock catalog.</p>
+    {% endif %}       
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>{{ stock.stockname }}</h1>
+
+  <p><strong>Company:</strong> {{ stock.company }}</p>
+  <p><strong>Summary:</strong> {{ stock.summary }}</p>
+  <p><strong>Tickersymbol:</strong> {{ stock.tickersymbol }}</p> 
+  <p><strong>Profituse:</strong> {% for profituse in stock.profituse.all %} {{ profituse }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
+{% endblock %}

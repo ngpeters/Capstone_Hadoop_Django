@@ -1,0 +1,22 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<h1>Hadoop Stock Analysis Home</h1>
+
+  <p>Welcome to <em>Hadoop Stock Analysis</em>, a django website for my capstone project.</p>
+  <p>By Natalie Peters</p>
+
+<h3>Site Content</h3>
+
+  <p>This site has the following record counts:</p>
+  <ul>
+    <li><strong>Stocks:</strong> {{ num_stocks }}</li>
+  </ul>
+
+<h4>Hadoop Results</h4>
+<ul>
+	<li><strong>Dividen Count:</strong> 1225</li>
+	<li><strong>Buyback Count:</strong> 35</li>
+</ul>
+
+{% endblock %}
