@@ -6,7 +6,8 @@ Hadoop/MapReduce:
 Using data from https://www.kaggle.com/camnugent/sandp500/data with 20 stocks chosen
 10 from stocks in the Buyback Index
 10 from stocks in Dividend Aristocrats list
-mapper.py and reducer.py are in hadoop/3.0.0
+
+mapper.py and reducer.py are in the hadoop/3.0.0/ directory
 
 Django backed Website:
 
